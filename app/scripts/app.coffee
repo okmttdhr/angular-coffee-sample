@@ -32,8 +32,11 @@ angular
       .when '/about',
         templateUrl: 'views/about.html'
         controller: 'AboutCtrl'
-      .when '/test',
-        templateUrl: 'views/about.html'
-        controller: 'TestCtrl'
+      .when '/phones',
+        templateUrl: 'views/phones.html'
+        controller: 'PhonesCtrl'
+      .when '/phones/:phoneId',
+        templateUrl: 'views/phone-detail.html'
+        controller: 'PhoneDetailCtrl'
       .otherwise
         redirectTo: '/'
