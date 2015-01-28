@@ -1,1 +1,5 @@
-<p>This is the about view.</p>
+<div ng-controller="AboutCtrl">
+  <p>親スコープ</p>
+  <div><input type="text" ng-model="note"><i>// Update to see how parent scope interacts with component scope</i></div>
+  <div sample-directive name="tadahiro" attribute-note="{{note}}" binding-note="note" alert-message="showMessage(note)"></div>
+</div>
